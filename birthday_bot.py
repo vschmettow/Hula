@@ -5,7 +5,7 @@ import urllib.request
 import os
 
 BIRTHDAYS = [
-    {"name": "Robin",    "slack_id": "U082W8FKGH3", "day": 27, "month": 4},
+    {"name": "Robin",    "slack_id": "U082W8FKGH3", "day":  4, "month": 5},
     {"name": "Konrad",   "slack_id": "U08QQ9P8VGA", "day":  1, "month": 12},
     {"name": "Alex",     "slack_id": "U06J25FCK7U", "day":  6, "month": 4},
     {"name": "Benedikt", "slack_id": "U09F1JUR691", "day": 25, "month": 10},
