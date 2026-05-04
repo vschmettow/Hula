@@ -21,15 +21,15 @@ BIRTHDAYS = [
 
 MESSAGES = [
     "🎂 Happy Birthday <@{slack_id}>! Hope your day is as rich in biodiversity as our best monitoring sites 🌿",
-    "🥳 Happy Birthday <@{slack_id}>! Another year wiser — the team is lucky to have you 🚀",
+    "🥳 Happy Birthday <@{slack_id}>! Another year wiser and the team is lucky to have you 🚀",
     "🎉 Happy Birthday <@{slack_id}>! May your day be full of good vibes, great food, and zero bugs (the software kind) 🐛",
-    "🎈 Happy Birthday <@{slack_id}>! Here's to an amazing year ahead — you make this team what it is 🌍",
+    "🎈 Happy Birthday <@{slack_id}>! Here's to an amazing year ahead, you make this team what it is 🌍",
     "🌟 Happy Birthday <@{slack_id}>! Wishing you a day as bright as a BioT sensor on a clear summer morning ☀️",
-    "🍰 Happy Birthday <@{slack_id}>! One year more experienced and more awesome. Go celebrate — you've earned it 🎊",
+    "🍰 Happy Birthday <@{slack_id}>! One year more experienced and more awesome. Go celebrate, you've earned it 🎊",
     "🎁 Happy Birthday <@{slack_id}>! May your inbox be empty and your birthday absolutely legendary 🦁",
     "🥂 Happy Birthday <@{slack_id}>! Another trip around the sun completed. Here's to the next one 🌱",
     "🐦 Happy Birthday <@{slack_id}>! You're one of the rare species we're always happy to detect 🎉",
-    "🌍 Happy Birthday <@{slack_id}>! The world is a slightly better place because you're in it — happy birthday! 🎂",
+    "🌍 Happy Birthday <@{slack_id}>! The world is a slightly better place because you're in it. Happy birthday! 🎂",
 ]
 
 GIFS = [
