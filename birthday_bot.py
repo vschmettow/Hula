@@ -32,6 +32,19 @@ MESSAGES = [
     "🌍 Happy Birthday <@{slack_id}>! The world is a slightly better place because you're in it — happy birthday! 🎂",
 ]
 
+GIFS = [
+    "https://media.giphy.com/media/MG4ctSFB04ltvXpudW/giphy.gif",
+    "https://media.giphy.com/media/Mjcv3Dg6irEG6Bb9In/giphy.gif",
+    "https://media.giphy.com/media/g5R9dok94mrIvplmZd/giphy.gif",
+    "https://media.giphy.com/media/Qvns6NmhC1MBLKGbL1/giphy.gif",
+    "https://media.giphy.com/media/XGijTnUuPfZyrfVEMs/giphy.gif",
+    "https://media.giphy.com/media/cROwFEvVvhNG8/giphy.gif",
+    "https://media.giphy.com/media/kPIrzoMdhZJisCre2S/giphy.gif",
+    "https://media.giphy.com/media/LGBKlgMCKQbkDKcG4t/giphy.gif",
+    "https://media.giphy.com/media/TSpM3iivfaVfH5zjAC/giphy.gif",
+    "https://media.giphy.com/media/4oaCPLmXriCpMUowWV/giphy.gif",
+]
+
 
 def main():
     today = datetime.date.today()
@@ -40,7 +53,22 @@ def main():
     for person in BIRTHDAYS:
         if person["day"] == today.day and person["month"] == today.month:
             message = random.choice(MESSAGES).format(slack_id=person["slack_id"])
-            payload = json.dumps({"text": message}).encode("utf-8")
+            gif_url = random.choice(GIFS)
+
+            payload = json.dumps({
+                "blocks": [
+                    {
+                        "type": "section",
+                        "text": {"type": "mrkdwn", "text": message}
+                    },
+                    {
+                        "type": "image",
+                        "image_url": gif_url,
+                        "alt_text": "Happy Birthday!"
+                    }
+                ]
+            }).encode("utf-8")
+
             req = urllib.request.Request(
                 webhook_url,
                 data=payload,
