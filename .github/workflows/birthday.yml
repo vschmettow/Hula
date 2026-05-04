@@ -1,0 +1,16 @@
+name: Birthday Bot
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # 09:00 CET / 10:00 CEST
+  workflow_dispatch:      # allow manual trigger for testing
+
+jobs:
+  birthday-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run birthday bot
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python birthday_bot.py
